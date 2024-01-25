@@ -12,7 +12,7 @@ This is the challenge 👉🏽
 
 ### Screenshot
 ![Desktop Screenshoot](/screenshoot/screenshoot_desktop.png)
-![Mobile Screenshoot](/screenshot/screenshoot_mobile.png)
+![Mobile Screenshoot](/screenshoot/screenshoot_mobile.png)
 
 ### Built with
 - Semantic HTML5 markup
