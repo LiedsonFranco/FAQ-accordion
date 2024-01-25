@@ -11,7 +11,7 @@ This is the challenge 👉🏽
     - [Built with](#built-with)
 
 ### Screenshot
-![Desktop Screenshoot](/screenshot/screenshot_desktop.png)
+![Desktop Screenshoot](/screenshoot/screenshoot_desktop.png)
 ![Mobile Screenshoot](/screenshot/screenshot_mobile.png)
 
 ### Built with
