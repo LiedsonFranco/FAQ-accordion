@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Work_Sans;
+    src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@keyframes slow_showing{
+    0% {height: 0;color: transparent;}
+    50% {height: 80px;}
+    75%{height: max-content;}
+    100%{color: black;}
+}
+@keyframes slow_hiddening{
+    0%{height: max-content;color: black;}
+    50% {height: 50px;color: rgba(0, 0, 0, 0.103);}
+    100% {height: 0;color: transparent; display: none;}
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    font-family: Work_Sans;
+}
+.background{
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: white;
+    width: 80%;
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 2px 15px 40px 2px hsla(293, 16%, 49%, 0.336);
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+h1 img{
+    margin-right: 20px;
+
+}
+.hidden_text_animation{
+    animation-name: slow_hiddening;
+    animation-delay: .3s;
+    animation-duration: 1.3s;
+    animation-direction: ease-in-out;
+    animation-fill-mode: both;
+    transition: 1s;
+}
+.hidden_text{
+    display: none;
+}
+.answer{
+    color: hsl(292, 16%, 49%);
+    animation-name: slow_showing;
+    animation-delay: .3s;
+    animation-duration: 1.3s;
+    animation-direction: ease-in-out;
+    animation-fill-mode: both;
+    transition: 1s;
+}
+.question{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+}
+.question button{
+    border: none;
+    background-color: transparent;
+    color: none;
+    transition: 1s;
+}
+hr{
+    border: 1px solid hsl(275, 100%, 97%);
+    margin-top: 20px;
+}
+@media only screen and (min-width: 630px) {
+    .background{
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 40vh;
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        background-color: white;
+        width: max(600px,400px);
+        padding: 30px;
+        border-radius: 20px;
+        margin: auto;
+        box-shadow: 2px 15px 40px 2px hsla(293, 16%, 49%, 0.336);
+    }
+}
