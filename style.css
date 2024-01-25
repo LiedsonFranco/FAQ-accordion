@@ -4,7 +4,7 @@
 }
 @keyframes slow_showing{
     0% {height: 0;color: transparent;}
-    50% {height: 80px;}
+    50% {height: 50px;}
     75%{height: max-content;}
     100%{color: black;}
 }
